@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form site</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="form_signup">
+      <header class="form_signup_title">SING UP</header>
+
+      <form class="form_signup_main" method="POST" action="/login">
+        <input
+          class="form_signup_main_login"
+          type="text"
+          name="login"
+          placeholder="Your login"
+          minlength="3"
+          required
+        />
+
+        <input
+          class="form_signup_main_email"
+          type="email"
+          name="email"
+          placeholder="Your e-mail"
+          required
+        />
+
+        <input
+          class="form_signup_main_password"
+          type="password"
+          name="password"
+          placeholder="Password"
+          minlength="5"
+          maxlength="12"
+          required
+        />
+
+        <input
+          class="form_signup_main_password_repeat"
+          type="password"
+          name="passwordRepeat"
+          placeholder="Repeat your password"
+          minlength="5"
+          maxlength="12"
+          required
+        />
+
+        <button class="form_signup_main_button" type="submit">Sign up</button>
+      </form>
+      
+      <footer class="form_language">
+
+        <select class='form_language_choice'name="language">
+          <option>english</option>
+          <option>russian</option>
+        </select>
+
+      </footer>
+
+    </div>
+  </body>
+</html>

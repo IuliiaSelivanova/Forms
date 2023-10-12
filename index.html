@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form site</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="form_signin">
+      <header class="form_signin_title">LOGIN</header>
+
+      <form class="form_signin_main" method="POST" action="/login">
+        <input
+          class="form_signin_main_login"
+          type="text"
+          name="login"
+          placeholder="Your login"
+          minlength="3"
+        />
+
+        <input
+          class="form_signin_main_password"
+          type="password"
+          name="password"
+          placeholder="Password"
+          minlength="5"
+          maxlength="12"
+        />
+
+        <button class="form_signin_main_button" type="submit">Sign in</button>
+      </form>
+
+        <button class="footer_button">
+          <img class="footer_button-icon" src="./image/icon.png" />
+          <a href="https://337tjv.csb.app/">Sign up</a>
+        </button>
+      </footer>
+    </div>
+  </body>
+</html>

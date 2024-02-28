@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form site</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Fraunces:opsz,wght@9..144,500&display=swap"
+      rel="stylesheet"
+    />
+    <script async type="module" src="./js/script.js"></script>
+    <script src="https://unpkg.com/i18next@23.7.18/dist/umd/i18next.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form_signin-active">
+        <header class="form_signin_title">LOGIN</header>
+        <form class="form_signin_main" method="POST">
+          <input
+            class="form_signin_main_login"
+            type="email"
+            name="email"
+            placeholder="Your e-mail"
+            id="login"
+            required
+          /> <span class="error hide"></span>
+          <input
+            class="form_signin_main_password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="password"
+            required
+          /><span class="error hide"></span>
+
+          <button class="form_signin_main_button" type="submit" id="signIn">
+            Sign in
+          </button>
+        </form>
+
+        <footer class="footer">
+          <p class="footer_suggestion">
+            If you have not registered on this site, <br />
+            create a new account
+          </p>
+          <button class="footer_button">
+            <img class="footer_button-icon" src="/image/icon.png" />
+            Sign up
+          </button>
+
+          <select
+            class="form_language_choice"
+            name="language"
+            id="signin-language-selector"
+          >
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+          </select>
+        </footer>
+
+        <!-- <div class="outputFormSignIn" id="outputFormSignIn">
+          <h1 class="output-title">OUTPUT FORM</h1>
+          <div>Login: <span id="outputLog"></span></div>
+          <div>Password: <span id="outputPass"></span></div>
+        </div> -->
+      </div>
+
+      <div class="form_signup">
+        <header class="form_signup_title">SING UP</header>
+
+        <form class="form_signup_main" method="POST" action="/login">
+          <input
+            class="form_signup_main_FLN"
+            type="text"
+            name="name"
+            placeholder="Your first and last names"
+            required
+            id="FLN"
+          /> <span class="error hide"></span>
+          <input
+            class="form_signup_main_login"
+            type="text"
+            name="login"
+            placeholder="Your login"
+            minlength="3"
+            required
+            id="login2"
+          />
+          <input
+            class="form_signup_main_email"
+            type="email"
+            name="email"
+            placeholder="Your e-mail"
+            required
+            id="mail"
+          /> <span class="error hide"></span>
+          <input
+            class="form_signup_main_password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            minlength="5"
+            maxlength="12"
+            required
+            id="password2"
+          /> <span class="error hide"></span>
+          <input
+            class="form_signup_main_password_repeat"
+            type="password"
+            name="passwordRepeat"
+            placeholder="Repeat your password"
+            minlength="5"
+            maxlength="12"
+            required
+            id="passwordRepeat"
+          /><span class="error hide"></span>
+
+          <input type="checkbox" id="policy" class="custom-checkbox" required />
+          <label for="policy" class="policy">I agree to Privacy Policy</label>
+
+          <input type="checkbox" id="mailing" class="custom-checkbox">
+          <label for="mailing" class="policy mailing">I would like to recieve news about product</label>
+
+          <button class="form_signup_main_button" type="button" id="signUp">
+            Sign up
+          </button>
+        </form>
+
+        <footer class="form_language">
+          <button class="footer_button" id="btnSignIn">Sign in</button>
+
+          <select
+            class="form_language_choice"
+            name="language"
+            id="signup-language-selector"
+          >
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+          </select>
+        </footer>
+
+        <!-- <div class="outputFormSignUp" id="outputForm">
+          <h1 class="output-title">OUTPUT FORM</h1>
+          <div>Login: <span id="outputLog2"></span></div>
+          <div>E-mail: <span id="outputMail"></span></div>
+          <div>Password: <span id="outputPass2"></span></div>
+          <div>Repeated password: <span id="outputRepPass"></span></div>
+          <div>Checkbox Policy: <span id="outputPolicy"></span></div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
